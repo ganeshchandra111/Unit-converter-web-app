@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+
+    <style>
+        body {
+            font-family: cursive;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 32px 40px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 420px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 22px;
+            color: #222;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 24px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <p>
+            This application converts common measurement units with accurate, predefined
+            conversion factors. Select a category below to convert values between supported
+            units instantly.
+        </p>
+
+        <a href="/length">Length Converter</a>
+        <a href="/weight">Weight Converter</a>
+    </div>
+</body>
+</html>

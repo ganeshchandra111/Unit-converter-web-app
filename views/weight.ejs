@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 20px 24px;
+            border-radius: 6px;
+            width: 320px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .submit {
+            margin-top: 16px;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 16px;
+            font-size: 15px;
+            text-align: center;
+            color: #333;
+        }
+
+        .back {
+            display: block;
+            margin-top: 14px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <form action="/weight" method="get">
+        <h2>Weight Converter</h2>
+
+        <label for="weightValue">Enter weight</label>
+        <input type="text" id="weightValue" name="value" placeholder="Enter value">
+
+        <label for="fromUnit">From unit</label>
+        <input type="text" id="fromUnit" name="fromUnit" placeholder="mg, g, kg, ounce, pound">
+
+        <label for="toUnit">Convert to unit</label>
+        <input type="text" id="toUnit" name="toUnit" placeholder="mg, g, kg, ounce, pound">
+
+        <input type="submit" class="submit" value="Convert">
+
+        <div class="result">
+            Result: <%= message %>
+        </div>
+
+        <a href="/" class="back">← Back to home</a>
+    </form>
+</body>
+</html>
