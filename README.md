@@ -1,4 +1,4 @@
-```md
+
 # Unit Converter App
 
 This is a simple unit converter web application built using Node.js, Express, and EJS.
@@ -21,7 +21,7 @@ The application allows users to convert values between common measurement units.
 
 ## How to Run
 1. Install dependencies:
-```
+
 
 npm install
 
@@ -39,25 +39,11 @@ node index.js
 
 [http://localhost:5000](http://localhost:5000)
 
-```
-
-## Project Structure
-```
-
-.
-├── index.js
-├── converstion.js
-├── views
-│   ├── index.ejs
-│   ├── length.ejs
-│   └── weight.ejs
-
-```
 
 ## Notes
 - Input validation is handled on the server.
 - Units must be entered exactly as supported.
 - This project is intended for learning and demonstration purposes.
-```
+
 
 https://roadmap.sh/projects/unit-converter
